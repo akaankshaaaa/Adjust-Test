@@ -109,13 +109,13 @@ Procedure 1 :
 
 	1. First Procedure could be to create a file using : vi file.txt
 	2. Paste the contents as mentioned
-	3. Provide executable permission to the file using : chmod 644 file.txt (or whatever permission you want to give where read (4), write (2) , execute (1))
-	4. Provide ownership to the file depending on your need for eg : chown -R akanksha:akanksha file.txt
-	5. If you want to print contents of the file : cat file.txt
+	3. Provide executable permission to the file using : chmod 644 file.txt (or any other relevant like read (4), write (2) , execute (1))
+	4. Provide ownership to the file depending on the need for eg : chown -R akanksha:akanksha file.txt
+	5. To print contents of the file : cat file.txt
 
 Procedure 2:
 
-	1. You can create a shell scripted file with file.sh
+	1. Create a shell scripted file with file.sh
 	2. Open the file and paste content utilising vi file.sh ( to open the file ) and put contents in the file as : 
 echo "8Re3XuXhn7IXDyLZ6uhzZw3cYvVnef
 LZKtowinhNVhbfb8KBI05ANxwSlVBQ
@@ -217,8 +217,8 @@ N5EjDAUJvOpAq4U2bP3pnnMb19esVN
 Rwn8MLTbiQU05Py5kDvlM0j2zl76B1"
 
 	3. Provide executable permission to the file : chmod 777 file.sh
-	4. Now if you want to print the contents of th file, you can execute the file with command : ./file.sh
-	5. You can change permission of the file as well with command : chown -R akanksha:akanksha file.sh
+	4. To print the contents of the file, execute the file with command : ./file.sh
+	5. Change ownership of the file as well with command : chown -R akanksha:akanksha file.sh
  
 **Question 2 : How many lines in this file?**
 
@@ -231,12 +231,12 @@ akanksha@akanksha-VirtualBox:~/Adjust-Test$ cat file.txt |wc -l
 
 **Answer 3 :**
 
-Process 1 : If you want character "Z", case sensitive to capital only : grep -o "Z" file.txt | wc -l
+Process 1 : To count character "Z", case sensitive to capital only : grep -o "Z" file.txt | wc -l
 
 akanksha@akanksha-VirtualBox:~/Adjust-Test$ grep -o "Z" file.txt |wc -l
 44
 
-Process 2 : If you want the character "Z", irrespective of its case sensitivity : grep -io "Z" file.txt |wc -l
+Process 2 : To count character "Z", irrespective of its case sensitivity : grep -io "Z" file.txt |wc -l
 
 akanksha@akanksha-VirtualBox:~/Adjust-Test$ grep -io "Z" file.txt |wc -l
 98
