@@ -234,11 +234,13 @@ akanksha@akanksha-VirtualBox:~/Adjust-Test$ cat file.txt |wc -l
 Process 1 : To count character "Z", case sensitive to capital only : grep -o "Z" file.txt | wc -l
 
 akanksha@akanksha-VirtualBox:~/Adjust-Test$ grep -o "Z" file.txt |wc -l
+
 44
 
 Process 2 : To count character "Z", irrespective of its case sensitivity : grep -io "Z" file.txt |wc -l
 
 akanksha@akanksha-VirtualBox:~/Adjust-Test$ grep -io "Z" file.txt |wc -l
+
 98
 
 **Question 4: Find on which line is “Junior”, “Platform” and “Engineer”,not case sensitive.**
